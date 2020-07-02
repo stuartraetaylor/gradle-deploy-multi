@@ -1,0 +1,18 @@
+import com.mkring.wildlydeplyplugin.*
+
+plugins {
+    id 'war'
+}
+
+task wildflyDeploy(type: DeployWildflyTask) {
+    dependsOn 'build'
+
+    deploymentName = project.name
+    runtimeName = war.archiveFileName.get()
+    file = war.archiveFile.get()
+
+    host = 'localhost'
+    port = 9990
+    user = project.properties['wildfly.user']
+    password = project.properties['wildfly.password']
+}

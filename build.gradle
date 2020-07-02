@@ -1,0 +1,15 @@
+plugins {
+    id 'base'
+    id 'com.mkring.wildlydeplyplugin.deploy-wildfly-plugin' version '0.3.0'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+wrapper {
+    gradleVersion = '6.5'
+}
+
+defaultTasks 'build'

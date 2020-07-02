@@ -1,0 +1,4 @@
+rootProject.name = 'gradle-deploy-multi'
+
+include 'webapp_1'
+include 'webapp_2'

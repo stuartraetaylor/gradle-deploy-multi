@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web version="7.2">
+    <context-root>webapp_1</context-root>
+</jboss-web>

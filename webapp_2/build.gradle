@@ -15,4 +15,6 @@ task wildflyDeploy(type: DeployWildflyTask) {
     port = 9990
     user = project.properties['wildfly.user']
     password = project.properties['wildfly.password']
+
+    reload = false
 }
